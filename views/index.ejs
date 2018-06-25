@@ -1,0 +1,59 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/head %>
+   
+</head>
+<body class="container">
+
+<header>
+    <% include partials/header %>
+    
+</header>
+
+<main>
+    <div class="jumbotron">
+         
+        <h1 class="text-center">Mes compétences informatiques 
+            
+                "<i class='fas fa-star'></i>"
+
+</h1>
+
+    <p> <ul class="list-group-item">
+            <% competences.forEach(function(competence) { %>
+    
+                <% var niveau = competence.niveau  %>
+
+                <li class="list-group-item"> <%= competence.competence %> -
+                    <% for (var f = 0; f < niveau; f++) {%>
+
+                <i class='fas fa-star'></i>
+                <% }  %>
+
+                    </li>
+            <% }); %>
+        </ul> </p>
+
+        <!-- <% function inserEtoile(niveau) { %>
+            <% var stars = "";%>
+     
+         
+                      
+                            return stars; %>
+        
+        
+                            <%  }%> -->
+   
+    </div>
+
+</main>
+
+<footer>
+    <% include partials/footer %>
+</footer>
+
+</body>
+</html>

@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 var port = 3560;
+//appel du fichier compétence.json
 var competences = require ('./data/compétence.json')
 
 app.set('view engine', 'ejs');
@@ -15,10 +16,6 @@ app.get('/', function(req, res) {
     res.render('index', dataToEJS );
 });
 
-app.get('/competence', function(req, res) {
-
-res.sendFile(__dirname +"/compétence.json");
-});
 
 
 app.listen(port, function(){

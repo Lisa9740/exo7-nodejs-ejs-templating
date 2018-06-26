@@ -23,30 +23,21 @@
 </h1>
 
     <p> <ul class="list-group-item">
+        <!-- boucle qui permet d'afficher toutes les compétences et les niveaux -->
             <% competences.forEach(function(competence) { %>
-    
-                <% var niveau = competence.niveau  %>
-
+                    <% var niveau = competence.niveau  %>
+                <!-- affichage de toutes les compétences du fichier json compétence.json -->
                 <li class="list-group-item"> <%= competence.competence %> -
+                    <!-- boucle qui permet d'afficher les étoiles par rapport au niveau de compétence  -->
                     <% for (var f = 0; f < niveau; f++) {%>
-
-                <i class='fas fa-star'></i>
+                         <i class='fas fa-star'></i>
                 <% }  %>
 
                     </li>
             <% }); %>
         </ul> </p>
 
-        <!-- <% function inserEtoile(niveau) { %>
-            <% var stars = "";%>
-     
-         
-                      
-                            return stars; %>
         
-        
-                            <%  }%> -->
-   
     </div>
 
 </main>

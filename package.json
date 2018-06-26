@@ -1,0 +1,23 @@
+{
+  "name": "exo-7-nodejs-ejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lisa9740/exo7-nodejs-ejs-templating.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lisa9740/exo7-nodejs-ejs-templating/issues"
+  },
+  "homepage": "https://github.com/Lisa9740/exo7-nodejs-ejs-templating#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
